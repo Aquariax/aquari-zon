@@ -1,4 +1,3 @@
-import { Link } from '@material-ui/core';
 import React from 'react';
 import './Home.css';
 import Product from './Product';
@@ -13,32 +12,14 @@ function Home() {
 				/>
 				<div className='home_row'>
 					<Product
+						id={1}
 						title='The Lean Startup'
 						price={19.99}
 						image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
 						rating={5}
 					/>
 					<Product
-						title='The Lean Startup'
-						price={19.99}
-						image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
-						rating={5}
-					/>
-				</div>
-				<div className='home_row'>
-					<Product
-						title='The Lean Startup'
-						price={19.99}
-						image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
-						rating={5}
-					/>
-					<Product
-						title='The Lean Startup'
-						price={19.99}
-						image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
-						rating={5}
-					/>
-					<Product
+						id={1}
 						title='The Lean Startup'
 						price={19.99}
 						image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
@@ -47,6 +28,30 @@ function Home() {
 				</div>
 				<div className='home_row'>
 					<Product
+						id={1}
+						title='The Lean Startup'
+						price={19.99}
+						image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
+						rating={5}
+					/>
+					<Product
+						id={1}
+						title='The Lean Startup'
+						price={19.99}
+						image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
+						rating={5}
+					/>
+					<Product
+						id={1}
+						title='The Lean Startup'
+						price={19.99}
+						image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
+						rating={5}
+					/>
+				</div>
+				<div className='home_row'>
+					<Product
+						id={1}
 						title='The Lean Startup'
 						price={19.99}
 						image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
