@@ -24,12 +24,16 @@
 	border-color: #a88743 #9c7e31 #846a29;
 	color: #111;
 }
+
 .product_price {
 	margin-top: 5px;
 }
 .product_info {
 	height: 100px;
 	margin-bottom: 15px;
+}
+.product_info > p {
+	font-weight: 800;
 }
 .product_rating {
 	display: flex;
