@@ -4,6 +4,8 @@ import Header from './Header';
 import Home from './Home';
 import Checkout from './Checkout';
 import Login from './Login';
+import Footer from './Footer';
+import Scroll from './Scroll.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
@@ -41,6 +43,8 @@ function App() {
 						<Home />
 					</Route>
 				</Switch>
+				<Scroll />
+				<Footer />
 			</div>
 		</Router>
 	);

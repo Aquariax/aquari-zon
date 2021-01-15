@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
 const Header = () => {
-	const [{ basket, user }, dispatch] = useStateValue();
+	const [{ basket, user }] = useStateValue();
 	const handleAuthentication = () => {
 		if (user) {
 			auth.signOut();
@@ -14,7 +14,7 @@ const Header = () => {
 	};
 
 	return (
-		<div className='header'>
+		<div className='header' id='head'>
 			<Link to='/'>
 				<img
 					src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'
@@ -27,7 +27,7 @@ const Header = () => {
 				<SearchIcon className='header_searchIcon' />
 			</div>
 			<div className='header_nav'>
-				<Link to={!user && '/login'}>
+				<Link to={`${!user && '/login'}`}>
 					<div className='header_option' onClick={handleAuthentication}>
 						<span className='header_optionLineOne'>
 							Hello, {user ? `${user.email}` : 'User'}

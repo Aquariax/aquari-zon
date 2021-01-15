@@ -6,6 +6,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	margin: 10px;
+	border-radius: 15px;
 	padding: 20px;
 	width: 100%;
 	max-height: 400px;
@@ -37,4 +38,19 @@
 }
 .product_rating {
 	display: flex;
+}
+.product:hover {
+	background-color: rgba(244, 251, 255, 0.562);
+	animation: scaler 0.5s;
+	transform: scale(1.02);
+	box-shadow: 4px 5px 5px 4px rgb(194, 194, 194);
+}
+
+@keyframes scaler {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.02);
+	}
 }
