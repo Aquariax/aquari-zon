@@ -7,6 +7,7 @@ import Login from './Login';
 import Footer from './Footer';
 import Payment from './Payment';
 import Scroll from './Scroll.js';
+import Orders from './Orders.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
@@ -45,6 +46,9 @@ function App() {
 					</Route>
 					<Route path='/checkout'>
 						<Checkout />
+					</Route>
+					<Route path='/orders'>
+						<Orders />
 					</Route>
 					<Route path='/payment'>
 						<Elements stripe={promise}>

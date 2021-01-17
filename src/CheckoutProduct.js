@@ -3,7 +3,7 @@ import './CheckoutProduct.css';
 import { useStateValue } from './StateProvider';
 import { useSpring, animated } from 'react-spring';
 
-const CheckoutProduct = ({ id, image, price, rating, title }) => {
+const CheckoutProduct = ({ id, image, price, rating, title, hideButton }) => {
 	const [{}, dispatch] = useStateValue();
 	const removeFromBasket = () => {
 		dispatch({
@@ -27,7 +27,9 @@ const CheckoutProduct = ({ id, image, price, rating, title }) => {
 							<p>🌟</p>
 						))}
 				</div>
-				<button onClick={removeFromBasket}>Remove from Basket</button>
+				{!hideButton && (
+					<button onClick={removeFromBasket}>Remove from Basket</button>
+				)}
 			</div>
 		</animated.div>
 	);
