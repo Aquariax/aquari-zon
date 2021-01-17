@@ -1,0 +1,12 @@
+$border-color: #a88743 #9c7e31 #846a29;
+$amazon-orange: #f0c14b;
+@mixin media-md {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+@mixin media-lg {
+	@media screen and (max-width: 1024px) {
+		@content;
+	}
+}

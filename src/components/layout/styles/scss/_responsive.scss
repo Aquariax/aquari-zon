@@ -1,0 +1,77 @@
+@include media-md {
+	.home {
+		&_row {
+			flex-direction: column;
+		}
+		&_image {
+			margin-bottom: -20%;
+			object-fit: cover;
+		}
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+		height: 9rem;
+		padding-bottom: 1rem;
+	}
+	.footer {
+		flex-direction: column;
+		&_sec {
+			margin: 1rem;
+		}
+	}
+	.product {
+		width: 80vw;
+		height: 700px;
+		&_info {
+			height: 150px;
+			margin-bottom: 25px;
+		}
+	}
+	.checkout {
+		flex-direction: column;
+		&_ad {
+			height: 2rem;
+		}
+	}
+	.checkoutProduct {
+		flex-direction: column;
+		align-items: center;
+		&_info {
+			button {
+				height: 2rem;
+				width: 100%;
+			}
+		}
+	}
+	.subtotal {
+		width: 280px;
+	}
+	.payment {
+		&_container {
+			&_section {
+				flex-direction: column;
+				align-items: center;
+				&_title {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+	.orders {
+		padding: 0;
+		width: 95%;
+		margin: 1rem auto;
+	}
+	.order {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		h2 {
+			margin-bottom: 1rem;
+		}
+		&_id {
+			top: 3.6%;
+		}
+	}
+}

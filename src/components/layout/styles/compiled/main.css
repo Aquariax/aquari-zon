@@ -279,7 +279,7 @@
   height: 30px;
   border: 1px solid;
   margin-top: 10px;
-  border-color: #a87734 #9c7e31 #846a29;
+  border-color: #a88743 #9c7e31 #846a29;
 }
 
 .login_registerButton {
@@ -501,7 +501,7 @@
   border: 1px solid;
   font-weight: bolder;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
+  border-color: #a88743 #9c7e31 #846a29;
   color: #111;
 }
 
@@ -534,5 +534,107 @@
 
 .orders h1 {
   margin: 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .home_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home_image {
+    margin-bottom: -20%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 9rem;
+    padding-bottom: 1rem;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_sec {
+    margin: 1rem;
+  }
+  .product {
+    width: 80vw;
+    height: 700px;
+  }
+  .product_info {
+    height: 150px;
+    margin-bottom: 25px;
+  }
+  .checkout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .checkout_ad {
+    height: 2rem;
+  }
+  .checkoutProduct {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkoutProduct_info button {
+    height: 2rem;
+    width: 100%;
+  }
+  .subtotal {
+    width: 280px;
+  }
+  .payment_container_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .payment_container_section_title {
+    margin-bottom: 1rem;
+  }
+  .orders {
+    padding: 0;
+    width: 95%;
+    margin: 1rem auto;
+  }
+  .order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .order h2 {
+    margin-bottom: 1rem;
+  }
+  .order_id {
+    top: 3.6%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

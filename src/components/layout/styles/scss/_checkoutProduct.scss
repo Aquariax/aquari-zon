@@ -4,10 +4,10 @@
 	&_info {
 		padding-left: 20px;
 		button {
-			background: #f0c14b;
+			background: $amazon-orange;
 			border: 1px solid;
 			margin-top: 10px;
-			border-color: #a88743 #9c7e31 #846a29;
+			border-color: $border-color;
 			color: #111;
 		}
 	}

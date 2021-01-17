@@ -38,13 +38,13 @@
 		}
 	}
 	&_signInButton {
-		background-color: #f0c14b;
+		background-color: $amazon-orange;
 		border-radius: 2px;
 		width: 100%;
 		height: 30px;
 		border: 1px solid;
 		margin-top: 10px;
-		border-color: #a87734 #9c7e31 #846a29;
+		border-color: $border-color;
 	}
 	&_registerButton {
 		border-radius: 2px;
