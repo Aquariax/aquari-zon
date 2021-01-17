@@ -1,7 +1,6 @@
 import React from 'react';
-import './CheckoutProduct.css';
-import { useStateValue } from './StateProvider';
-import { useSpring, animated } from 'react-spring';
+import { useStateValue } from '../../state/StateProvider';
+import { animated } from 'react-spring';
 
 const CheckoutProduct = ({ id, image, price, rating, title, hideButton }) => {
 	const [{}, dispatch] = useStateValue();

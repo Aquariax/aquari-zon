@@ -4,13 +4,13 @@
 	border: 1px solid lightgrey;
 	background-color: white;
 	position: relative;
-}
-.order_id {
-	position: absolute;
-	top: 40;
-	right: 20px;
-}
-.order_total {
-	font-weight: 500;
-	text-align: right;
+	&_id {
+		position: absolute;
+		top: 40;
+		right: 20px;
+	}
+	&_total {
+		font-weight: 500;
+		text-align: right;
+	}
 }

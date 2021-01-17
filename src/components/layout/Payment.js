@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './Payment.css';
-import { useStateValue } from './StateProvider';
-import CheckoutProduct from './CheckoutProduct';
+import { useStateValue } from '../state/StateProvider';
+import CheckoutProduct from './checkout/CheckoutProduct';
 import { Link, useHistory } from 'react-router-dom';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
-import { getBasketTotal } from './reducer';
-import { db } from './firebase';
-import axios from './axios';
+import { getBasketTotal } from '../state/reducer';
+import { db } from '../../firebase';
+import axios from '../../axios';
 
 function Payment() {
 	const [{ basket, user }, dispatch] = useStateValue();
@@ -76,21 +75,21 @@ function Payment() {
 				<h1>
 					Checkout (<Link to='/checkout'>{basket?.length} items</Link>)
 				</h1>
-				<div className='payment_section'>
-					<div className='payment_title'>
+				<div className='payment_container_section'>
+					<div className='payment_container_section_title'>
 						<h3>Delivery Address</h3>
 					</div>
-					<div className='payment_address'>
+					<div className='payment_container_section_address'>
 						<p>{user?.email}</p>
 						<p>123 React Lane</p>
 						<p>Los Angeles, CA</p>
 					</div>
 				</div>
-				<div className='payment_section'>
-					<div className='payment_title'>
+				<div className='payment_container_section'>
+					<div className='payment_container_section_title'>
 						<h3>Review items and delivery</h3>
 					</div>
-					<div className='payment_items'>
+					<div className='payment_container_section__items'>
 						{basket.map((item) => (
 							<CheckoutProduct
 								id={item.id}
@@ -102,11 +101,11 @@ function Payment() {
 						))}
 					</div>
 				</div>
-				<div className='payment_section'>
-					<div className='payment_title'>
+				<div className='payment_container_section'>
+					<div className='payment_container_section_title'>
 						<h3>Payment Method</h3>
 					</div>
-					<div className='payment_details'>
+					<div className='payment_container_section_details'>
 						<form action='' onSubmit={handleSubmit}>
 							<CardElement onChange={handleChange} />
 							<div className='price_container'>
